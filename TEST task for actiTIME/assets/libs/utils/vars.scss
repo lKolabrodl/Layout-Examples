@@ -1,0 +1,44 @@
+$mainColor: #4B5D68;
+$secondaryColor:#212353;
+$thirdColor:#9C69E2;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 160%;
+  background: #fff;
+  color: $mainColor
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1230px) {
+  .wrapper {
+    padding: 0 30px;
+  }
+}
+
+.btn-g {
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 16px 58px;
+  color: #fff;
+  background: $thirdColor;
+  transition: .2s;
+  border: none;
+  white-space: nowrap;
+
+  &:hover {
+    background: #B17FF4
+  }
+}
+
+.title {
+  color: $secondaryColor;
+  text-align: center;
+}
