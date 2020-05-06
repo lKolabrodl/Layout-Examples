@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="logo-small.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+<!--		<link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto|Roboto+Condensed:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+		<link href="libs/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+<!--		<link href="libs/owl-carousel/owl.carousel.min.css" rel="stylesheet">-->
+
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+   <title>Онлайн школа МИР</title>
+	<link rel="stylesheet" href="libs/slick-theme.css">
+	<link rel="stylesheet" href="libs/slick.css">
+	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="school-css.css">
+  </head>
+  <body>
+<!--  first__screen-->
+<section class="first__screen">
+	<header class="main__header">
+		<nav class="main__header__nav">
+			<button class="d-block d-lg-none menu__button" id="menu__button"></button>
+			<img src="img/logo-small.svg" alt="logo" class="d-md-block">
+			<ul class="main__header__nav__items d-none d-lg-flex">
+				<li class="menu__nav"><a href="#lesons">Уроки</a></li>
+				<li class="menu__nav"><a href="#about">О нас</a></li>
+				<li class="menu__nav"><a href="#our_teachers">Преподаватели</a></li>
+				<li class="menu__nav"><a href="#reviews">Отзывы</a></li>
+				<li class="menu__nav"><a href="#smi">СМИ о нас</a></li>
+			</ul>
+			<div class="d-flex lang_wrapper">
+				<img src="img/russia.png" alt="russia" class="d-md-block">
+				<select name="language" id="lang" class="d-none d-lg-block">
+					<option value="" class="d-none"></option>
+					<option value="">ru</option>
+					<option value="">eng</option>
+				</select>
+			</div>
+			<button class="d-none d-lg-block popup_begin">Начать учиться</button>
+		</nav>
+	</header>
+	<header class="mobile__header" id="mobile__header">
+		<ul class="main__header__nav__items d-block text-center">
+				<li class="menu__nav"><a href="#lesons">Уроки</a></li>
+				<li class="menu__nav"><a href="#about">О нас</a></li>
+				<li class="menu__nav"><a href="#our_teachers">Преподаватели</a></li>
+				<li class="menu__nav"><a href="#reviews">Отзывы</a></li>
+				<li class="menu__nav"><a href="#smi">СМИ о нас</a></li>
+			</ul>
+	</header>
+	<div class="first__screen__container">
+		<h1>ОНЛАЙН ШКОЛА</h1>
+		<p>
+			В рамках данной школы проводятся онлайн-лекции
+			для школьников по трем предметам: «русский язык»,
+			«русская литература» и «история России».
+		</p>
+		<button class="popup_begin main__button">Подробнее</button>
+		<div class="first__screen__container__buttons">
+			<button>Русский язык</button>
+			<button>Русская литература</button>
+			<button>История России</button>
+		</div>
+	</div>
+</section>
+<!--about-->
+<section id="about" class="about__us">
+	<h2>О нас</h2>
+	<div class="about__us__container d-flex align-items-top justify-content-between">
+		<div class="about__us__wrapper">
+			<p>В рамках данной школы проводятся онлайн-лекции для школьников по
+				трем предметам: «русский язык», «русская литература» и «история России».
+				Лекции содержат в себе элементы школьной программы выпускных классов
+				российской школы по соответствующим дисциплинам. Каждый имеет
+				возможность задать вопрос лектору и получить своевременный ответ. <br><br>
+
+				Занятия проходят по субботам. По часу на каждый из предметов. Можно
+				слушать курс как в классе, так и дома. В процессе проводится
+				промежуточная аттестация, ребята получают задания и рекомендации по
+				дополнительной самоподготовке и литературе для изучения. По итогам
+				прохождения курсового обучения выдается сертификат. Начало занятий - 5
+				октября.
+			</p>
+			<button class="popup_begin main__button">Начать учиться</button>
+		</div>
+		<video class="about__us__img" controls="controls" poster="img/poster.jpg" >
+			<source src="media/prezentation.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+		</video>
+	</div>
+</section>
+<!--benefits-->
+<section class="benefits">
+	<h2>«Онлайн-школа» это:</h2>
+	<div class="benefits__container">
+		<div class="d-flex benefits__container__wrap">
+		<div class="benefits__item"><img src="img/icon-1.png" alt="">
+			<p>Возможность получить дополнительные знания </p></div>
+		<div class="benefits__item"><img src="img/icon-2.png" alt="">
+			<p>Возможность дистанционного обучения у квалифицированных преподавателей</p></div>
+		<div class="benefits__item"><img src="img/icon-3.png" alt="">
+			<p>Получение уникального образовательного опыта</p></div>
+		</div>
+		<div class="d-flex benefits__container__wrap benefits__container__wrap2">
+		<div class="benefits__item"><img src="img/icon-4.png" alt="">
+			<p>Развитие общей эрудиции</p></div>
+		<div class="benefits__item"><img src="img/icon-5.png" alt="">
+			<p>Расширение кругозора</p></div>
+		</div>
+	</div>
+<!--	Редактирование 19.09-->
+	<div class="wrapper">
+		<div class="benefits-container">
+			<div class="benefits-item">
+				<div class="benefits-wrapper">
+					<img src="img/icon-1.png" alt="icon">
+					<p>Возможность получить дополнительные
+						знания </p>
+				</div>
+			</div>
+			<div class="benefits-item">
+				<div class="benefits-wrapper">
+					<img src="img/icon-2.png" alt="icon">
+					<p>Возможность дистанционного
+						обучения у квалифицированных
+						преподавателей СПбГУ</p>
+				</div>
+			</div>
+			<div class="benefits-item">
+				<div class="benefits-wrapper">
+					<img src="img/icon-3.png" alt="icon">
+					<p>Получение уникального образовательного
+						опыта </p>
+				</div>
+			</div>
+			<div class="benefits-item">
+				<div class="benefits-wrapper">
+					<img src="img/icon-4.png" alt="icon">
+					<p>Развитие общей эрудиции </p>
+				</div>
+			</div>
+			<div class="benefits-item">
+				<div class="benefits-wrapper">
+					<img src="img/icon-5.png" alt="icon">
+					<p>Расширение кругозора </p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</section>
+<!--cooperate with the Ministry of Labor-->
+<section class="ministry">
+	<h2>Сотрудничаем с министерством труда Таджикистана</h2>
+	<div class="wrapper">
+		<div class="ministry-container">
+			<div class="ministry-item">
+				<a href="img/memoBig.jpg" class="memo_big" data-fancybox="images1" >
+					<img src="img/memo.png" alt="Ministry of Labor">
+				</a>
+			</div>
+			<div class="ministry-item">
+				<a href="img/memoBig2.jpg" class="memo_big" data-fancybox="images1" >
+					<img src="img/memo2.png" alt="Ministry of Labor">
+				</a>
+			</div>
+			<div class="ministry-item">
+				<a href="img/memoBig3.jpg" class="memo_big" data-fancybox="images1" >
+					<img src="img/memo3.png" alt="Ministry of Labor">
+				</a>
+			</div>
+		</div>
+		<div class="ministry-container-slider">
+			<div class="ministry-item">
+				<a href="img/memoBig.jpg" class="memo_big_slider" data-fancybox="images2" >
+					<img src="img/memo.png" alt="Ministry of Labor">
+				</a>
+			</div>
+			<div class="ministry-item">
+				<a href="img/memoBig2.jpg" class="memo_big_slider" data-fancybox="images2" >
+					<img src="img/memo2.png" alt="Ministry of Labor">
+				</a>
+			</div>
+			<div class="ministry-item">
+				<a href="img/memoBig3.jpg" class="memo_big_slider" data-fancybox="images2" >
+					<img src="img/memo3.png" alt="Ministry of Labor">
+				</a>
+			</div>
+		</div>
+		<div class="load-pdf">
+			<a href="memo.pdf" download="">скачать <img src="img/pdf.png" alt=""></a>
+		</div>
+	</div>
+</section>
+
+
+<section id="lesons" class="lessons">
+	<h2>Уроки</h2>
+	<div class="lessons__item">
+		<div class="russian_language d-flex align-items-center justify-content-between">
+			<div class="russian_language__background"></div>
+			<div class="lessons__item__wrapper">
+			<h2>Русский язык</h2>
+			<p>Занятия проходят по субботам. По часу на каждый из
+предметов. Можно слушать курс как в классе, так и
+дома. В процессе проводится промежуточная
+аттестация, ребята получают задания и рекомендации
+по дополнительной самоподготовке и литературе для
+изучения. По итогам прохождения курсового обучения
+выдается сертификат. Начало занятий - 5 октября.</p>
+<button class="popup_begin lessons__button">Записи лекций</button>
+</div>
+		</div>
+		<div class="russian_literature d-flex align-items-center justify-content-between">
+			<div class="lessons__item__wrapper">
+			<h2>Русская литература</h2>
+			<p>Занятия проходят по субботам. По часу на каждый из
+предметов. Можно слушать курс как в классе, так и
+дома. В процессе проводится промежуточная
+аттестация, ребята получают задания и рекомендации
+по дополнительной самоподготовке и литературе для
+изучения. По итогам прохождения курсового обучения
+выдается сертификат. Начало занятий - 5 октября.</p>
+<button class="popup_begin lessons__button">Записи лекций</button>
+</div>
+<div class="russian_literature__background"></div>
+		</div>
+		<div class="russian_history d-flex align-items-center justify-content-between">
+			<div class="russian_history__background"></div>
+			<div class="lessons__item__wrapper">
+			<h2>История России</h2>
+			<p>Занятия проходят по субботам. По часу на каждый из
+предметов. Можно слушать курс как в классе, так и
+дома. В процессе проводится промежуточная
+аттестация, ребята получают задания и рекомендации
+по дополнительной самоподготовке и литературе для
+изучения. По итогам прохождения курсового обучения
+выдается сертификат. Начало занятий - 5 октября.</p>
+<button class="popup_begin lessons__button">Записи лекций</button>
+</div>
+
+		</div>
+	</div>
+</section>
+<section id="our_teachers" class="teachers_carousel">
+	<h2>Преподаватели</h2>
+
+<div id="teachers" class="carousel slide d-none d-lg-block " data-ride="carousel">
+
+  <div class="carousel-inner">
+  	<!-- 1 -->
+    <div class="carousel-item active teachers d-flex justify-content-between align-items-center">
+      <div class="teacher">
+		<img src="img/teacher1.png" alt="">
+		<p><span>Ольга Конова</span><br>Русский язык</p>
+	</div>
+	<div class="teacher d-none d-sm-block">
+		<img src="img/teacher2.png" alt="">
+		<p><span>Тимур Лапин</span><br>Русский язык</p>
+	</div>
+	<div class="teacher d-none d-sm-block">
+		<img src="img/teacher3.png" alt="">
+		<p><span>Татьяна Герасимова</span><br>Литература</p>
+	</div>
+	<div class="teacher d-none d-sm-block">
+		<img src="img/teacher4.png" alt="">
+		<p><span>Вячеслав Тарасов</span><br>История России</p>
+	</div>
+    </div>
+</div>
+</div>
+
+
+<!--	МОЙ СЛАЙДЕР-->
+	<div class="slick-slider" id="slick-slider">
+		<div class="slider">
+			<div class="teacher">
+			<img src="img/teacher2.png" alt="">
+			<p><span>Тимур Лапин</span><br>Русский язык</p>
+		</div>
+		</div>
+		<div class="slider">
+			<div class="teacher">
+				<img src="img/teacher3.png" alt="">
+				<p><span>Татьяна Герасимова</span><br>Литература</p>
+			</div>
+		</div>
+		<div class="slider">
+			<div class="teacher">
+				<img src="img/teacher4.png" alt="">
+				<p><span>Вячеслав Тарасов</span><br>История России</p>
+			</div>
+		</div>
+		<div class="slider">
+			<div class="teacher">
+				<img src="img/teacher1.png" alt="">
+				<p><span>Ольга Конова</span><br>Русский язык</p>
+			</div>
+		</div>
+
+	</div>
+
+
+</section>
+<h2 id="reviews" class="about__us__header">Отзывы</h2>
+<section class="reviews">
+		<div class="line"></div>
+		<div class="container slick-slider-two" id="slick-slider-two">
+			<div class="slider-items">
+				<div class="img">
+					<div class="text">
+						<img src="img/review1.png" alt="">
+						<p>Олег Зиновьев <span>г. Москва</span> </p>
+
+					</div>
+					<div class="stars">
+						<img src="img/stars.png" alt="">
+					</div>
+				</div>
+				<div class="content">
+					<p>Обратился сюда, так как нужно было РВП. Помогли с тестами и
+						всей документацией. Отличная цена и персонал! Планирую обращаться
+						еще раз, для прохождения тестов ТРКИ, Элементарного и Базового уровня.
+					</p>
+				</div>
+			</div>
+			<div class="slider-items">
+				<div class="img">
+					<div class="text">
+						<img src="img/review2.png" alt="">
+						<p>Алена Лихачёва<span>г.Тула</span> </p>
+
+					</div>
+					<div class="stars">
+						<img src="img/stars.png" alt="">
+					</div>
+				</div>
+				<div class="content">
+					<p>
+						Обращалась сюда, так как нужно было разрешение на работу.
+						Помогли с тестами и всей документацией. Отличная цена и
+						персонал! Планирую обращаться еще раз, для прохождения
+						тестов ТРКИ, 4 и 5 уровней.
+					</p>
+				</div>
+			</div>
+			<div class="slider-items">
+				<div class="img">
+					<div class="text">
+						<img src="img/avatar1.jpg" alt="">
+						<p>Борис Субботин<span>г. Пушкино</span> </p>
+
+					</div>
+					<div class="stars">
+						<img src="img/stars.png" alt="">
+					</div>
+				</div>
+				<div class="content">
+					<p>Обратился сюда, так как нужно было РВП. Помогли с тестами и
+						всей документацией. Отличная цена и персонал! Планирую обращаться
+						еще раз, для прохождения тестов ТРКИ, Элементарного и Базового уровня.
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+<!--news-->
+<h2 id="smi" class="news__header">СМИ о нас</h2>
+<section class="news">
+	<div class="wrapper">
+		<div class="content">
+			<div class="content-news">
+				<picture>
+					<source srcset="img/news1.webp" type="image/webp">
+					<img src="img/news1.jpg" alt="news">
+				</picture>
+				<h3>
+					Петербургский университет открыл онлайн-школу для
+					детей, лишенных в Латвии русского языка
+				</h3>
+				<div class="links">
+					<span>Источник: НТВ</span>
+					<a href="https://www.ntv.ru/novosti/2129204/">Подробнее</a>
+				</div>
+
+			</div>
+			<div class="content-news">
+				<picture>
+					<source srcset="img/news2.webp" type="image/webp">
+					<img src="img/news2.jpg" alt="news">
+				</picture>
+				<h3>
+					В Латвии стартовала первая онлайн-школа для
+					соотечественников
+				</h3>
+				<div class="links">
+					<span>Источник: НТВ</span>
+					<a href="https://www.ntv.ru/novosti/2129204/">Подробнее</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="content news-slider">
+			<div class="content-news">
+				<picture>
+					<source srcset="img/news1.webp" type="image/webp">
+					<img src="img/news1.jpg" alt="news">
+				</picture>
+				<h3>
+					Петербургский университет открыл онлайн-школу для
+					детей, лишенных в Латвии русского языка
+				</h3>
+				<div class="links">
+					<span>Источник: НТВ</span>
+					<a href="https://www.ntv.ru/novosti/2129204/">Подробнее</a>
+				</div>
+
+			</div>
+			<div class="content-news">
+				<picture>
+					<source srcset="img/news2.webp" type="image/webp">
+					<img src="img/news2.jpg" alt="news">
+				</picture>
+				<h3>
+					В Латвии стартовала первая онлайн-школа для
+					соотечественников
+				</h3>
+				<div class="links">
+					<span>Источник: НТВ</span>
+					<a href="https://www.ntv.ru/novosti/2129204/">Подробнее</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="page__footer">
+	<div class="page__footer__nav">
+		<div class="page__footer__nav__container d-flex align-items-center justify-content-between">
+
+			<img src="img/logo-big.png" alt="logo">
+
+			<ul class="d-flex align-items-center justify-content-between">
+				<li class="menu__nav"><a href="#lesons">Уроки</a></li>
+				<li class="menu__nav"><a href="#about">О нас</a></li>
+				<li class="menu__nav"><a href="#our_teachers">Преподаватели</a></li>
+				<li class="menu__nav"><a href="#reviews">Отзывы</a></li>
+				<li class="menu__nav"><a href="#smi">СМИ о нас</a></li>
+			</ul>
+			<button class="popup_begin main__button">Начать учиться</button>
+		</div>
+	</div>
+	<div class="page__footer__copyright d-flex align-items-center justify-content-between">
+		<p>© Copyright 2014 - 2019</p>
+		<div class="networks d-flex">
+			<div class="fb"><a href="#"></a></div>
+			<div class="twitter"><a href="#"></a></div>
+			<div class="vk"><a href="#"></a></div>
+		</div>
+	</div>
+</footer>
+
+		<div id="popup_begin" class="white-popup mfp-hide">
+			<div class="form__header">
+				<h3>Оставить заявку</h3>
+			</div>
+			<form action="action.php" method="post">
+				<input type="hidden" value="">
+				<div class="form-group">
+					<label>Ваше имя
+						<input type="text" class="form-control" name="name" required>
+					</label>
+				</div>
+				<div class="form-group">
+					<label>Ваш телефон
+						<input type="text" class="mask_phone form-control" name="phone" required>
+					</label>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary btn-block">Отправить</button>
+				</div>
+				<div class="form-group">
+					<div class="g-recaptcha" data-sitekey="6LetGrkUAAAAAJplpb3ub4k4UMJ5EJiAC0XMOuE9"></div>
+				</div>
+			</form>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<!--		<script src="libs/jquery.js"></script>-->
+<!--<script src="libs/bootstrap/js/bootstrap.min.js"></script>-->
+
+
+<!--		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+<!--		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="libs/jquery-3.4.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+		<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+<!--		<script src="libs/owl-carousel/owl.carousel.min.js"></script>-->
+		<script src="libs/jquery.inputmask.min.js"></script>
+		<script src="libs/slick.js"></script>
+		<script src="libs/jquery.fancybox.min.js"></script>
+		<script src="school-js.js"></script>
+  </body>
+</html>
+<!--Create by vk.com/kolabrod-->
