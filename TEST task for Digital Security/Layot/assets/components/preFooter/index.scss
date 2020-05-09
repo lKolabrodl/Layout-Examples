@@ -1,0 +1,82 @@
+section.prefooter {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.33);
+  }
+
+  padding: 66px 0 95px;
+  background-image: url("./images/prefooter__bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .prefooter__main {
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    max-width: 600px;
+
+    h3 {
+      color: #FFFFFF;
+      font-size: 24px;
+      max-width: 500px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    form {
+      margin-top: 80px;
+      display: flex;
+
+      input.prefooter-input {
+        background: rgba(255, 255, 255, 0.39);
+        padding: 19px;
+        font-size: 14px;
+        width: 100%;
+        margin-right: 10px;
+      }
+
+      input.prefooter-input::placeholder {
+        color: #fff;
+      }
+
+      .prefooter-button {
+        height: 54px;
+        cursor: pointer;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  section.prefooter {
+    background-size: cover;
+    padding: 45px 0;
+  }
+
+  section.prefooter .prefooter__main form {
+    flex-direction: column;
+
+    input.prefooter-input {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  section.prefooter .prefooter__main form {
+    margin-top: 50px;
+  }
+
+  section.prefooter .prefooter__main h3 {
+    font-size: 19px;
+  }
+}

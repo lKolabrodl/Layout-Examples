@@ -1,0 +1,66 @@
+$mainColor: #000000;
+$secondaryColor: #E43855;
+$thirdСolor: #8C8C8C;
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 160%;
+  background: #fff;
+  color: $mainColor;
+
+  a {
+    color: $mainColor;
+  }
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1160px) {
+
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
+.title-g {
+  font-weight: 900;
+  font-size: 36px;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  line-height: 1;
+
+}
+
+.btn-g {
+  background: #E43855;
+  box-shadow: 2px 4px 4px rgba(203, 57, 57, 0.31);
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding: 12px 65px;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    box-shadow: 2px 4px 4px rgba(203, 57, 57, 0.9);
+  }
+}
+
+.line-gradient {
+  &::after {
+    content: '';
+    display: block;
+    margin-top: 28px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right,
+        rgba(0, 0, 0, .7) 10%, rgba(0, 0, 0, .01) 70%);
+  }
+}

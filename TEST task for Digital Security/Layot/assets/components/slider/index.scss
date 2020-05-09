@@ -1,0 +1,228 @@
+section.slider {
+  margin: 240px 0 0 100px;
+
+  .slider__main {
+    display: flex;
+
+    .slider__nav {
+      flex-basis: 30%;
+      color: $thirdСolor;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding-bottom: 90px;
+        position: relative;
+        cursor: pointer;
+        text-transform: capitalize;
+        white-space: nowrap;
+        transition: .3s ease-in-out;
+
+        &:before {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 1px;
+          background-color: $thirdСolor;
+          left: 3.5px;
+          bottom: 0%;
+          transform: translateY(15px);
+        }
+
+        &:first-child {
+          &::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            background-color: $thirdСolor;
+            left: 3.5px;
+            bottom: 0%;
+            transform: translateY(-90%);
+            z-index: -1;
+
+          }
+        }
+
+        &:hover {
+          color: $secondaryColor;
+
+          .slider__nav-circle {
+            background-color: $secondaryColor;
+          }
+        }
+
+        .slider__nav-circle {
+          transition: .3s ease-in-out;
+          width: 9px;
+          height: 9px;
+          background-color: $thirdСolor;
+          display: block;
+          border-radius: 50%;
+          flex-shrink: 0;
+          margin-right: 33px;
+        }
+      }
+
+      li.active {
+        color: $secondaryColor;
+
+        .slider__nav-circle {
+          background-color: $secondaryColor;
+        }
+      }
+
+
+
+    }
+
+    .slider__content {
+      flex-basis: 70%;
+
+      .slider__content-item {
+        opacity: 0;
+        transition: .3s ease-in-out;
+        overflow: hidden;
+        transform: translateY(125%);
+        max-height: 0;
+        background-image: url(./images/statue-of-liberty.svg);
+        background-repeat: no-repeat;
+        background-position: center left 100%;
+
+        .slider__content-item-wrapper {
+          max-width: 450px;
+        }
+
+        h3 {
+          text-align: center;
+        }
+
+        .slider__content-item-weather {
+          margin: 62px auto 45px auto;
+          display: flex;
+          flex-direction: column;
+          max-width: 250px;
+
+          .slider__content-item-temperature,
+          .slider__content-item-time {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .slider__content-item-time {
+            margin-top: 25px;
+          }
+
+          .slider__content-item-time span {
+            margin-left: 5px;
+          }
+
+          span {
+            line-height: 2;
+          }
+
+        }
+
+        .slider__content-item-btn {
+          margin-top: 100px;
+          display: flex;
+          justify-content: center;
+        }
+
+      }
+
+      .slider__content-item.active {
+        transform: translateY(0%);
+        opacity: 1;
+        transition: .5s;
+        overflow: visible;
+        max-height: 1000px;
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  section.slider {
+    margin: 70px 0 0 0;
+  }
+
+  section.slider .slider__main {
+    flex-direction: column;
+  }
+
+  section.slider .slider__main .slider__nav {
+    margin: 0 auto 70px auto;
+    width: 100%;
+  }
+
+  section.slider .slider__main .slider__nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  section.slider .slider__main .slider__nav li {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    &:before {
+      height: 1px;
+      width: 100%;
+      bottom: 60%;
+    }
+
+    span.slider__nav-circle {
+      order: 2;
+      margin: 0;
+    }
+  }
+
+  section.slider .slider__main .slider__nav li::before {
+    z-index: -1;
+    left: -150%;
+    width: 300px;
+    transform: translate(25%, 14px);
+  }
+
+  section.slider .slider__main .slider__nav li:first-child::after {
+    display: none;
+  }
+
+  section.slider .slider__main .slider__content .slider__content-item .slider__content-item-wrapper {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  section.slider .slider__main .slider__content .slider__content-item .slider__content-item-btn {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  section.slider .slider__main .slider__nav li {
+    flex-basis: 30%;
+    margin-bottom: 30px;
+  }
+
+  section.slider .slider__main .slider__nav ul {
+    flex-wrap: wrap;
+  }
+
+  section.slider .slider__main .slider__nav li::before {
+    left: -115%;
+  }
+
+  section.slider .slider__main .slider__content .slider__content-item .slider__content-item-weather {
+    margin: 25px auto 25px auto;
+  }
+
+  section.slider .slider__main .slider__nav {
+    margin: 0 auto 35px auto;
+  }
+}
