@@ -51,6 +51,7 @@ section.history__states {
 
         .history__states__item-content-text {
           position: relative;
+          word-break: break-all;
 
           &::after {
             content: '';

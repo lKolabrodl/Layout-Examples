@@ -89,6 +89,10 @@ section.slider {
         background-repeat: no-repeat;
         background-position: center left 100%;
 
+        .slider__content-item-text {
+          word-break: break-word;
+        }
+
         .slider__content-item-wrapper {
           max-width: 450px;
         }
@@ -158,6 +162,7 @@ section.slider {
   section.slider .slider__main .slider__nav {
     margin: 0 auto 70px auto;
     width: 100%;
+    overflow: hidden;
   }
 
   section.slider .slider__main .slider__nav ul {

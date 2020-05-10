@@ -32,8 +32,10 @@ section.prefooter {
     }
 
     form {
-      margin-top: 80px;
-      display: flex;
+      p {
+        margin-top: 80px;
+        display: flex;
+      }
 
       input.prefooter-input {
         background: rgba(255, 255, 255, 0.39);
@@ -62,8 +64,11 @@ section.prefooter {
     padding: 45px 0;
   }
 
-  section.prefooter .prefooter__main form {
+  section.prefooter .prefooter__main form p {
     flex-direction: column;
+  }
+
+  section.prefooter .prefooter__main form {
 
     input.prefooter-input {
       margin-bottom: 20px;
