@@ -14,5 +14,7 @@ JS ES6 со сборщиком
 <hr>
 ссылка на работу : https://lkolabrodl.github.io/Layout-Examples/TEST%20task%20for%20Foach.site/dist/
 <br>
+<br>
+<br>
 
 ![Alt text](https://raw.githubusercontent.com/lKolabrodl/Layout-Examples/master/TEST%20task%20for%20Foach.site/Screenshot_2020-08-12%20Test.png)
