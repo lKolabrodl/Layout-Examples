@@ -1,0 +1,39 @@
+.widget {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 80px;
+  padding: 40px 0;
+  background: $backhround_second;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &__add {
+    margin: 20px 0;
+  }
+
+  &__show {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 40px;
+      width: 40px;
+      height: 80px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+      background-color: rgba(151, 151, 151, .3);
+      border-top-left-radius: 80px;
+      border-bottom-left-radius: 80px;
+      cursor: pointer;
+
+      svg {
+        margin-left: 8px;
+      }
+    }
+  }
+}

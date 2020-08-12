@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+
+@font-face {
+  font-family: 'rouble';
+  src: url('./rouble/rouble.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.rouble__fonts {
+  font-family: 'rouble' !important;
+}

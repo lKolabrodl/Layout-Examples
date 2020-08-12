@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+   Bril Mikhail - vk.com/kolabrod
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY 
+
+    CSS3, HTML5 , JS
+    
