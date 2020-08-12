@@ -13,6 +13,7 @@ JS ES6 со сборщиком
 
 <hr>
 ссылка на работу : https://lkolabrodl.github.io/Layout-Examples/TEST%20task%20for%20Foach.site/dist/
+<br>
 исходники в папке
 <br>
 <br>
