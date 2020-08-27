@@ -1,0 +1,143 @@
+.header {
+  padding: 20px 0;
+  background-color: $Black_light;
+
+  @media (max-width: 768px) {
+    padding-right: 14px;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    padding-right: 190px;
+
+    @media (max-width: 1280px) {
+      padding-right: 130px;
+    }
+
+    @media (max-width: 900px) {
+      padding-right: 40px;
+    }
+
+    .logo.icon {
+      width: 74px;
+      height: 40px;
+    }
+  }
+
+  &__nav {
+    flex-grow: 1;
+
+    ul {
+      display: flex;
+      justify-content: flex-start;
+
+      li {
+        @include h5;
+        color: #fff;
+        margin-right: 99px;
+        white-space: nowrap;
+
+        @media (max-width: 1280px) {
+          margin-right: 68px;
+        }
+
+        @media (max-width: 768px) {
+          margin-right: 40px;
+        }
+
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      li.has-children {
+        position: relative;
+
+
+        &:after {
+          content: '';
+          position: absolute;
+          right: -18px;
+          top: calc(50% - 4px);
+          width: 8px;
+          height: 8px;
+          border: 2px solid #FFFFFF;
+          border-top: 0;
+          border-left: 0;
+          transform: rotate(45deg);
+          transition: .3s;
+        }
+
+        ul {
+          width: 550px;
+          padding: 0 21px;
+          position: absolute;
+          top: 65px;
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          background: $Black_light;
+          border-radius: 9px;
+          display: none;
+
+          li {
+            margin: 0;
+            padding: 23px 0;
+            flex-basis: 50%;
+
+            a {
+              display: flex;
+
+              svg {
+                width: 21px;
+                height: 14px;
+                margin: 3px 10px 0px 0;
+              }
+
+              p {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                  padding-top: 6px;
+                  @include normal_text;
+                  color: $Gray_light;
+                }
+              }
+
+
+            }
+
+
+            &:nth-child(n+3) {
+              border-top: 0.5px solid #8F95AC;
+            }
+
+            &:nth-child(odd) {}
+
+          }
+        }
+      }
+
+      li.has-children._active {
+        &:after {
+          transform: rotate(-135deg);
+        }
+
+        ul {
+          display: flex;
+        }
+      }
+    }
+  }
+
+
+
+
+}
